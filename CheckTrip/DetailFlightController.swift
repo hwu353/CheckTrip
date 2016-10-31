@@ -39,6 +39,7 @@ class DetailFlightController: UIViewController {
     var flightInfo = FlightInfo()
     var tsaInfo = [TSAInfo]()
     var flightData:[String:String]! = [:]
+    var averageTime = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -114,24 +115,35 @@ class DetailFlightController: UIViewController {
                 info.Created_Datetime = jsonTSA["Created_Datetime"] as! String
                 if(jsonTSA["WaitTime"] as! String == "1"){
                     info.WaitTimeIndex = "0 min"
+                    averageTime += 0
                 }else if(jsonTSA["WaitTime"] as! String == "2"){
                     info.WaitTimeIndex = "1 - 10 min"
+                    averageTime += 5
                 }else if(jsonTSA["WaitTime"] as! String == "3"){
                     info.WaitTimeIndex = "11 - 20 min"
+                    averageTime += 15
                 }else if(jsonTSA["WaitTime"] as! String == "4"){
                     info.WaitTimeIndex = "21 - 30 min"
+                    averageTime += 25
                 }else if(jsonTSA["WaitTime"] as! String == "5"){
                     info.WaitTimeIndex = "31 - 45 min"
+                    averageTime += 38
                 }else if(jsonTSA["WaitTime"] as! String == "6"){
                     info.WaitTimeIndex = "46 - 60 min"
+                    averageTime += 53
                 }else if(jsonTSA["WaitTime"] as! String == "7"){
                     info.WaitTimeIndex = "61 - 90 min"
+                    averageTime += 75
                 }else if(jsonTSA["WaitTime"] as! String == "8"){
                     info.WaitTimeIndex = "91 - 120 min"
-                }else{info.WaitTimeIndex = "120+ min"}
+                    averageTime += 105
+                }else{info.WaitTimeIndex = "120+ min"
+                      averageTime += 120
+                }
                 
                 tsaInfo.append(info)
             }
+            averageTime /= 25
             
         } catch {
             print(error)

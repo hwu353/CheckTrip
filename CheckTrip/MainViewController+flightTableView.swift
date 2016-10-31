@@ -40,18 +40,18 @@ extension MainViewController: UITableViewDataSource,UITableViewDelegate {
         let flight = flights[indexPath.row]
         
         //departure gate
-        cell?.departureFlightLabel?.text = flight.departureAirportFsCode!
+        cell?.departureFlightLabel?.text = "ATL"
         
         cell?.departureTimeNumberLabel?.text = "12:00 pm"
         
         cell?.departureFlightDateLabel?.text = "12/12/2016"
         
-        cell?.departureGateLabel?.text = "Gate: \(flight.departureGate!)"
+        cell?.departureGateLabel?.text = "Gate: 1"
         
-        cell?.departureTerminalLabel?.text = "Terminal: \(flight.departureTerminal!)"
+        cell?.departureTerminalLabel?.text = "Terminal: A"
         
         //arrival gate
-        cell?.arrivalFlightLabel?.text = flight.arrivalAirportFsCode!
+        cell?.arrivalFlightLabel?.text = "SEA"
         
 
         
@@ -60,9 +60,9 @@ extension MainViewController: UITableViewDataSource,UITableViewDelegate {
         
         cell?.arivalFlightDateLabel?.text = "01/01/2016"
         
-        cell?.arrivalGateLabel?.text = "Gate: \(flight.arrivalGate!)"
+        cell?.arrivalGateLabel?.text = "Gate:2"
         
-        cell?.arrivalTerminalLabel?.text = "Terminal: \(flight.arrivalTerminal!)"
+        cell?.arrivalTerminalLabel?.text = "Terminal: B"
         
         return cell!
     }

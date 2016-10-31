@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7555E0FB1DC51B5D009CE38C /* TSAInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555E0FA1DC51B5D009CE38C /* TSAInfo.swift */; };
 		B214818C1DC136FA009B5730 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214818A1DC136FA009B5730 /* AppState.swift */; };
 		B214818D1DC136FA009B5730 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214818B1DC136FA009B5730 /* Constants.swift */; };
 		B214818F1DC15844009B5730 /* TSAParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214818E1DC15844009B5730 /* TSAParser.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		52C49BC110A7D3F3510FDDED /* Pods-CheckTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckTrip/Pods-CheckTrip.debug.xcconfig"; sourceTree = "<group>"; };
+		7555E0FA1DC51B5D009CE38C /* TSAInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSAInfo.swift; sourceTree = "<group>"; };
 		ABCB0F8AFE459A58D34C1F93 /* Pods_CheckTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B214818A1DC136FA009B5730 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B214818B1DC136FA009B5730 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				B2EC09D51DC03D4000B1C0F6 /* Flight.swift */,
 				B2EC09D61DC03D4000B1C0F6 /* FlightInfo.swift */,
+				7555E0FA1DC51B5D009CE38C /* TSAInfo.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7555E0FB1DC51B5D009CE38C /* TSAInfo.swift in Sources */,
 				B2EC09D81DC03D4000B1C0F6 /* FlightInfo.swift in Sources */,
 				B2EC09C61DC03CD200B1C0F6 /* MainViewController.swift in Sources */,
 				B2EC09CC1DC03CD200B1C0F6 /* SearchFlightController.swift in Sources */,
